@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { ContentCategory } from "@/types";
+import { BlogCategory, ContentCategory } from "@/types";
 import { Check, List } from "lucide-react";
 import { Drawer } from "vaul";
 
@@ -19,7 +19,7 @@ export function BlogHeaderLayout({
 }: {
   title: string;
   description: string;
-  categories: ContentCategory[];
+  categories: BlogCategory[] | ContentCategory[];
   href: string;
 }) {
   const [open, setOpen] = useState(false);

@@ -3,6 +3,11 @@ import type { Icon } from "lucide-react";
 
 import { Icons } from "@/components/shared/icons";
 
+export type BlogCategory = {
+  title: string;
+  slug: "news" | "education";
+  description: string;
+};
 export type ContentCategory = {
   title: string;
   slug: "website" | "graphic-design";

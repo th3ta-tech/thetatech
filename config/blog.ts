@@ -1,6 +1,6 @@
-import { ContentCategory } from "@/types";
+import { BlogCategory } from "@/types";
 
-export const BLOG_CATEGORIES: ContentCategory[] = [
+export const BLOG_CATEGORIES: BlogCategory[] = [
   {
     title: "News",
     slug: "news",
